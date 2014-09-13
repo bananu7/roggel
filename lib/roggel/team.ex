@@ -2,7 +2,7 @@ defmodule Roggel.Team do
   defstruct(id: nil, name: nil)
 end
 
-defmodule Roggel.TeamServer do
+defmodule Roggel.TeamRepository do
   def new(db) do
     %{db: db}
   end

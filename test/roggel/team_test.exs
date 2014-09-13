@@ -2,7 +2,7 @@ defmodule Roggel.TeamTest do
   use ExUnit.Case
 end
 
-defmodule Roggel.TeamServerTest do
+defmodule Roggel.TeamRepositoryTest do
   use ExUnit.Case
 
   setup do
@@ -12,7 +12,7 @@ defmodule Roggel.TeamServerTest do
   end
 
   test "create new team", ctx do
-    server = Roggel.TeamServer.new(ctx[:db])
-    {:ok, _id} = Roggel.TeamServer.create(server, "hello")
+    server = Roggel.TeamRepository.new(ctx[:db])
+    {:ok, _id} = Roggel.TeamRepository.create(server, "hello")
   end
 end
