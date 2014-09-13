@@ -26,6 +26,6 @@ defmodule Roggel.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    []
+    [{:epgsql, git: "https://github.com/epgsql/epgsql.git"}]
   end
 end
