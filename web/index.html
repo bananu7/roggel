@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="bower_components/requirejs/require.js"></script>
         <script src="js/require.config.js"></script>
-        <script>
-            require(['angular'], function(angular) {
-                console.log(angular);
-            });
-        </script>
+        <script>require(['js/main']);</script>
     </head>
     <body>
-
+        <div ng-controller="Stats">
+            <span class="copper-count" title="Copper">{{ copperCount }}</span>
+            <span class="silver-count" title="Silver">{{ silverCount }}</span>
+            <span class="gold-count" title="Gold">{{ goldCount }}</span>
+        </div>
     </body>
 </html>
