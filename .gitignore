@@ -4,3 +4,4 @@ erl_crash.dump
 *.ez
 .sass-cache
 /web/css/style.css
+/web/bower_components
