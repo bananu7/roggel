@@ -19,6 +19,7 @@ define(['js/roggel'], function(roggel) {
                     if (cell.x === current.x && cell.y === current.y) {
                         var value = Math.random();
                         switch (true) {
+                        case value < 0.02: cell.color = 'cyan'; break;
                         case value < 0.05: cell.color = 'gold'; break;
                         case value < 0.15: cell.color = 'silver'; break;
                         case value < 0.3: cell.color = '#b87333'; break;
