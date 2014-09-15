@@ -16,7 +16,7 @@ define(['js/roggel'], function(roggel) {
         return result;
     }]);
 
-    roggel.controller('Stats', ['$scope', 'stats', function($scope, stats) {
+    roggel.controller('StatsController', ['$scope', 'stats', function($scope, stats) {
         Object.defineProperty($scope, 'copperCount', {
             enumerable: true,
             get: function() { return stats.copperCount; }
